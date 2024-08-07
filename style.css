@@ -1,0 +1,49 @@
+.body{
+    background-color: #ffffff;
+}
+.color{                      
+    color:rgb(194, 160, 160)
+}
+.pre{
+    background-color: rgb(255, 255, 255);
+    width: 300px;;
+    height: 100px;;
+}
+.time{
+    color:rgb(255, 255, 255);
+}
+a {
+    text-decoration: none;
+    color: rgb(0, 110, 255);
+}
+ button{
+   background-color: rgb(255, 255, 255);
+   border: 1px solid rgb(255, 255, 255);
+   color: rgb(255, 255, 255);
+} 
+
+    /* 通知样式 */
+    .notification {
+        position: fixed;
+        bottom: 20px;
+        right: -300px; /* 开始时不在视图内 */
+        background-color: #333;
+        color: white;
+        padding: 15px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        transition: right 0.5s ease-in-out; /* 添加过渡动画 */
+    }
+
+    .notification-enter {
+        right: 20px; /* 动画完成后的位置 */
+    }
+
+    /* 倒计时样式 */
+    .countdown {
+        position: absolute;
+        bottom: 5px;
+        right: 5px;
+        color: #aaa; /* 较浅的颜色 */
+        font-size: 12px; /* 字体较小 */
+    }
