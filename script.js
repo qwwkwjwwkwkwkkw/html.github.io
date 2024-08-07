@@ -21,3 +21,27 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }, 1000);
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const text = `\
+      //      //     ////////////       ////////////////        //  
+      //      //          //          //       //       //      //  
+      //      //          //          //       //       //      //  
+      //////////          //          //       //       //      //  
+      //      //          //          //       //       //      //  
+      //      //          //          //       //       //      //  
+      //      //          //          //       //       //      //  ///////////`;
+  
+    const timeElement = document.getElementById('time');
+    let index = 0;
+  
+    function typeWriter() {
+      if (index < text.length) {
+        timeElement.textContent += text.charAt(index);
+        index++;
+        setTimeout(typeWriter, 5); // 控制字符出现的速度
+      }
+    }
+  
+    typeWriter();
+  });
